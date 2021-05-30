@@ -6,9 +6,39 @@ Module client et programme serveur pour capturer les flux vidéos de joueurs en 
 
 Utilisation des composants AppTethering fournis avec Delphi.
 
+## Utilisation du serveur
+
+* lancez le serveur en un ou plusieurs exemplaires sur votre réseau local
+
+## Implémentation de la librairie clients dans un logiciel
+
+* importez l'unité MonitoringImages\lib\uScreenMonitoring.pas dans votre projet
+
+* utlisez la dans les unités qui gèrent un changement d'affichage de l'écran
+
+* mettez à True la propriété AffichageEcranModifie lorsqu'un envoi d'une capture de la fiche active est voulu (ou dans un jeu lorsque l'écran a changé d'affichage).
+
+ScreenMonitoringLib.AffichageEcranModifie := true;
+
+## Problèmes connus
+
+Des problèmes réseau sont possibles selon la configuration de vos antivirus ou firewall.
+
+### ESET NOD32 Antivirus
+
+Activez le "mode joueur" dans la configuration de la protection de l'ordinateur.
+
 ## TODO List
 
-* Projet serveur qui gérera l'affichage en mosaïque et en plein.
+* ID du profil distant non tranmis avec la resource (image en stream)
+=> cf Embarcadero, contournement effectué
+
+* lors de la déconnexion (fermeture brutale d'un client/jeu) le monitoring ne le détecte pas toujours 
+=> faire boucle de test régulière de l'état des différentes connexions (aka manager et profils connectés)
+
+* pertes mémoires potentielles sur les clients dans quelques cas de fermeture
+
+* pertes de trames d'images sur la librairie cliente de temps en temps, donc il doit y avoir un plantage dans la tâche d'envoi de l'image (forcer une réactivation de l'envoi si rien envoyé après X boucles/trames)
 
 -----
 

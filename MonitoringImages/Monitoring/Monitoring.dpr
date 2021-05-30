@@ -4,7 +4,7 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   fMain in 'fMain.pas' {frmMain},
-  uTetheringSetup in '..\uTetheringSetup.pas';
+  uScreenMonitoring in '..\lib\uScreenMonitoring.pas' {ScreenMonitoringLib: TDataModule};
 
 {$R *.res}
 
