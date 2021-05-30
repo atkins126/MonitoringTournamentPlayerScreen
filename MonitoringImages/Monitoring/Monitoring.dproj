@@ -209,12 +209,19 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Linux64)'!=''">
         <DCC_UsePackage>RESTComponents;emsclientfiredac;DataSnapFireDAC;FireDACADSDriver;DatasnapConnectorsFreePascal;FireDACMSSQLDriver;inetdb;emsedge;fmx;FireDACIBDriver;dbexpress;IndyCore;dsnap;emsclient;DataSnapCommon;FireDACCommon;RESTBackendComponents;DataSnapConnectors;soapserver;bindengine;CloudService;FireDACOracleDriver;FireDACMySQLDriver;FireDACCommonODBC;FireDACCommonDriver;DataSnapClient;inet;IndySystem;FireDACDb2Driver;FireDACInfxDriver;FireDAC;emshosting;FireDACSqliteDriver;FireDACPgDriver;FireDACASADriver;FireDACTDataDriver;soaprtl;DbxCommonDriver;DataSnapServer;xmlrtl;soapmidas;DataSnapNativeClient;rtl;emsserverresource;DbxClientDriver;CustomIPTransport;bindcomp;dbxcds;FireDACODBCDriver;DataSnapIndy10ServerTransport;dsnapxml;dbrtl;IndyProtocols;FireDACMongoDBDriver;DataSnapServerMidas;$(DCC_UsePackage)</DCC_UsePackage>
+        <Debugger_Launcher>/usr/bin/xterm -e &quot;%debuggee%&quot;</Debugger_Launcher>
+        <Manifest_File>(vide)</Manifest_File>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_OSX64)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;RESTComponents;fmxase;DBXInterBaseDriver;emsclientfiredac;tethering;DataSnapFireDAC;FireDACMSSQLDriver;bindcompfmx;DBXOracleDriver;inetdb;FmxTeeUI;fmx;FireDACIBDriver;fmxdae;RadiantShapesFmx;FireDACDBXDriver;dbexpress;IndyCore;dsnap;emsclient;DataSnapCommon;FireDACCommon;RESTBackendComponents;soapserver;FMXTMSFNCUIPackPkgDXE13;bindengine;DBXMySQLDriver;CloudService;FireDACOracleDriver;FireDACMySQLDriver;DBXFirebirdDriver;FireDACCommonODBC;FireDACCommonDriver;DataSnapClient;inet;IndyIPCommon;bindcompdbx;IndyIPServer;IndySystem;fmxFireDAC;FMXTMSFNCCorePkgDXE13;FireDAC;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;FireDACASADriver;FireDACTDataDriver;FMXTee;soaprtl;DbxCommonDriver;ibxpress;DataSnapServer;xmlrtl;soapmidas;DataSnapNativeClient;fmxobj;FireDACDSDriver;rtl;DbxClientDriver;ibxbindings;DBXSybaseASADriver;CustomIPTransport;bindcomp;DBXInformixDriver;IndyIPClient;dbxcds;FireDACODBCDriver;RadiantShapesFmx_Design;DataSnapIndy10ServerTransport;dsnapxml;DataSnapProviderClient;dbrtl;IndyProtocols;inetdbxpress;FireDACMongoDBDriver;DataSnapServerMidas;$(DCC_UsePackage)</DCC_UsePackage>
         <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleVersion=1.0.0;CFBundleShortVersionString=1.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities;NSLocationUsageDescription=The reason for accessing the location information of the user;NSContactsUsageDescription=The reason for accessing the contacts;NSCalendarsUsageDescription=The reason for accessing the calendar data;NSRemindersUsageDescription=The reason for accessing the reminders;NSCameraUsageDescription=The reason for accessing the camera;NSMicrophoneUsageDescription=The reason for accessing the microphone;NSMotionUsageDescription=The reason for accessing the accelerometer;NSDesktopFolderUsageDescription=The reason for accessing the Desktop folder;NSDocumentsFolderUsageDescription=The reason for accessing the Documents folder;NSDownloadsFolderUsageDescription=The reason for accessing the Downloads folder;NSNetworkVolumesUsageDescription=The reason for accessing files on a network volume;NSRemovableVolumesUsageDescription=The reason for accessing files on a removable volume;NSSpeechRecognitionUsageDescription=The reason for requesting to send user data to Apple&apos;s speech recognition servers</VerInfo_Keys>
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <EL_BluetoothDevices>true</EL_BluetoothDevices>
+        <EL_IncomingNetwork>true</EL_IncomingNetwork>
+        <EL_OutgoingNetwork>true</EL_OutgoingNetwork>
+        <Debugger_Launcher>/usr/X11/bin/xterm -e &quot;%debuggee%&quot;</Debugger_Launcher>
+        <Manifest_File>(vide)</Manifest_File>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;RESTComponents;fmxase;DBXDb2Driver;DBXInterBaseDriver;vclactnband;VCLTMSFNCDashboardPackPkgDXE13;vclFireDAC;bindcompvclsmp;emsclientfiredac;tethering;svnui;DataSnapFireDAC;FireDACADSDriver;DBXMSSQLDriver;DatasnapConnectorsFreePascal;FireDACMSSQLDriver;vcltouch;FMXTMSFNCDashboardPackPkgDXE13;vcldb;bindcompfmx;svn;DBXOracleDriver;inetdb;TMSFMXPackPkgDXE13;FmxTeeUI;emsedge;fmx;FireDACIBDriver;fmxdae;RadiantShapesFmx;vcledge;vclib;TMSCryptoPkgDEDXE13;FireDACDBXDriver;dbexpress;IndyCore;vclx;dsnap;emsclient;DataSnapCommon;MGCustomGenerator;FireDACCommon;RESTBackendComponents;DataSnapConnectors;VCLTMSFNCCorePkgDXE13;VCLRESTComponents;soapserver;FMXTMSFNCUIPackPkgDXE13;VCLTMSFNCUIPackPkgDXE13;vclie;bindengine;DBXMySQLDriver;CloudService;FireDACOracleDriver;FireDACMySQLDriver;DBXFirebirdDriver;FireDACCommonODBC;FireDACCommonDriver;TMSWEBCorePkgLibDXE13;DataSnapClient;TMSCryptoPkgDXE13;inet;IndyIPCommon;bindcompdbx;vcl;IndyIPServer;DBXSybaseASEDriver;IndySystem;FireDACDb2Driver;bindcompvclwinx;dsnapcon;FireDACMSAccDriver;fmxFireDAC;FireDACInfxDriver;vclimg;FMXTMSFNCCorePkgDXE13;TeeDB;FireDAC;emshosting;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;FireDACASADriver;TMSWEBCorePkgDXE13;DBXOdbcDriver;FireDACTDataDriver;FMXTee;soaprtl;DbxCommonDriver;ibxpress;Tee;DataSnapServer;xmlrtl;soapmidas;DataSnapNativeClient;fmxobj;vclwinx;FireDACDSDriver;rtl;emsserverresource;DbxClientDriver;ibxbindings;DBXSybaseASADriver;CustomIPTransport;vcldsnap;bindcomp;appanalytics;DBXInformixDriver;IndyIPClient;bindcompvcl;TeeUI;dbxcds;VclSmp;adortl;FireDACODBCDriver;RadiantShapesFmx_Design;DataSnapIndy10ServerTransport;dsnapxml;DataSnapProviderClient;dbrtl;IndyProtocols;inetdbxpress;FireDACMongoDBDriver;DataSnapServerMidas;$(DCC_UsePackage)</DCC_UsePackage>
@@ -254,6 +261,8 @@
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -274,9 +283,10 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="fMain.pas">
-            <Form>Form1</Form>
+            <Form>frmMain</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="..\uTetheringSetup.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -297,10 +307,33 @@
                 <Source>
                     <Source Name="MainSource">Monitoring.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k270.bpl">Package Serveurs Office 2000 Embarcadero C++Builder</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp270.bpl">Package Serveurs Office XP Embarcadero C++Builder</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Composants Microsoft Office 2000 Sample Automation Server Wrapper</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Composants Microsoft Office XP Sample Automation Server Wrapper</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\delphi_PROJECTICNS.icns" Configuration="Debug" Class="ProjectOSXResource">
+                    <Platform Name="OSX64">
+                        <RemoteName>Monitoring.icns</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX64\Debug\Monitoring.dSYM" Configuration="Debug" Class="ProjectOSXDebug">
+                    <Platform Name="OSX64">
+                        <RemoteName>Monitoring</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX64\Debug\Monitoring.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements">
+                    <Platform Name="OSX64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -317,6 +350,18 @@
                 <DeployFile LocalName="Win32\Debug\Monitoring.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>Monitoring.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX64\Debug\Monitoring.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList">
+                    <Platform Name="OSX64">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX64\Debug\Monitoring" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="OSX64">
+                        <RemoteName>Monitoring</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1094,11 +1139,9 @@
             <Platforms>
                 <Platform value="Android">True</Platform>
                 <Platform value="Android64">True</Platform>
-                <Platform value="iOSDevice32">False</Platform>
                 <Platform value="iOSDevice64">True</Platform>
                 <Platform value="iOSSimulator">True</Platform>
                 <Platform value="Linux64">True</Platform>
-                <Platform value="OSX32">False</Platform>
                 <Platform value="OSX64">True</Platform>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">True</Platform>

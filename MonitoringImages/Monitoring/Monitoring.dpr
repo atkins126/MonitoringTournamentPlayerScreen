@@ -3,12 +3,13 @@ program Monitoring;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  fMain in 'fMain.pas' {Form1};
+  fMain in 'fMain.pas' {frmMain},
+  uTetheringSetup in '..\uTetheringSetup.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmMain, frmMain);
   Application.Run;
 end.

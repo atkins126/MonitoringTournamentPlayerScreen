@@ -8,10 +8,7 @@ Utilisation des composants AppTethering fournis avec Delphi.
 
 ## TODO List
 
-* tester AppTethering pour s'assurer que ça fonctionne
-* Projet client avec des trucs qui apparaissent à l'écran.
 * Projet serveur qui gérera l'affichage en mosaïque et en plein.
-* Implémenter AppTethering entre eux.
 
 -----
 

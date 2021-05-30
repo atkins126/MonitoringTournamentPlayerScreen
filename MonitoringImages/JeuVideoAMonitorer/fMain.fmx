@@ -7,5 +7,40 @@ object Form2: TForm2
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
+  object DrawTimer: TTimer
+    Interval = 200
+    OnTimer = DrawTimerTimer
+    Left = 144
+    Top = 64
+  end
+  object ScreenCaptureTimer: TTimer
+    Interval = 33
+    OnTimer = ScreenCaptureTimerTimer
+    Left = 264
+    Top = 72
+  end
+  object MonitoringConnexionClient: TTetheringManager
+    OnEndManagersDiscovery = MonitoringConnexionClientEndManagersDiscovery
+    OnEndProfilesDiscovery = MonitoringConnexionClientEndProfilesDiscovery
+    OnPairedFromLocal = MonitoringConnexionClientPairedFromLocal
+    OnPairedToRemote = MonitoringConnexionClientPairedToRemote
+    OnRequestManagerPassword = MonitoringConnexionClientRequestManagerPassword
+    OnNewManager = MonitoringConnexionClientNewManager
+    AllowedAdapters = 'Network'
+    Left = 560
+    Top = 72
+  end
+  object MonitoringProfileClient: TTetheringAppProfile
+    Manager = MonitoringConnexionClient
+    Actions = <>
+    Resources = <
+      item
+        Name = 'NumeroImage'
+        IsPublic = True
+      end>
+    Left = 560
+    Top = 176
+  end
 end

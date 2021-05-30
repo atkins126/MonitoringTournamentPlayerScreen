@@ -1,11 +1,64 @@
-object Form1: TForm1
+object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Monitoring Client Screen'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 476.000000000000000000
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 168.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 178.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object MonitoringConnexion: TTetheringManager
+    OnEndManagersDiscovery = MonitoringConnexionEndManagersDiscovery
+    OnEndProfilesDiscovery = MonitoringConnexionEndProfilesDiscovery
+    OnPairedFromLocal = MonitoringConnexionPairedFromLocal
+    OnPairedToRemote = MonitoringConnexionPairedToRemote
+    OnRequestManagerPassword = MonitoringConnexionRequestManagerPassword
+    OnNewManager = MonitoringConnexionNewManager
+    OnUnPairManager = MonitoringConnexionUnPairManager
+    OnRemoteManagerShutdown = MonitoringConnexionRemoteManagerShutdown
+    OnEndAutoConnect = MonitoringConnexionEndAutoConnect
+    OnRequestStorage = MonitoringConnexionRequestStorage
+    AllowedAdapters = 'Network'
+    OnError = MonitoringConnexionError
+    Left = 544
+    Top = 232
+  end
+  object MonitoringProfile: TTetheringAppProfile
+    Manager = MonitoringConnexion
+    Actions = <>
+    Resources = <
+      item
+        Name = 'NumeroImage'
+        IsPublic = True
+        Kind = Mirror
+        OnResourceReceived = TetheringAppProfile1Resources0ResourceReceived
+      end>
+    OnAcceptResource = MonitoringProfileAcceptResource
+    OnResourceReceived = MonitoringProfileResourceReceived
+    Left = 544
+    Top = 304
+  end
 end

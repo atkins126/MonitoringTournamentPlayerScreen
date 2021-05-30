@@ -3,7 +3,8 @@ program JeuVideoAMonitorer;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  fMain in 'fMain.pas' {Form2};
+  fMain in 'fMain.pas' {Form2},
+  uTetheringSetup in '..\uTetheringSetup.pas';
 
 {$R *.res}
 
