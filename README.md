@@ -2,9 +2,13 @@
 
 Monitoring d'écran des joueurs d'une salle de jeu en réseau.
 
-Module client et programme serveur pour capturer les flux vidéos de joueurs en réseau (local) et les afficher en mosaïque ou plein écran sur un autre apareil.
+Module client et programme serveur pour capturer les écrans vidéo de joueurs en réseau (local) et les afficher en mosaïque ou plein écran sur un autre appareil.
 
 Utilisation des composants AppTethering fournis avec Delphi.
+
+Ces projets et librairies sont plus prévues dans un contexte de jeu vidéo et de tournoi de gaming en salle, mais rien n'empêche d'utiliser la librairie de capture et envoi d'écran pour des présentations de projets développés sous Delphi.
+
+En effet il suffit d'un uses et d'une simple ligne pour actualiser l'écran. Ca doit fonctionner sur tout réseau local (sous réserve de configuration adaptée). Et donc à priori lors d'une conférence pour faire une démonstration sur plusieurs écrans ou dans une salle de classe.
 
 ## Utilisation du serveur
 
@@ -39,6 +43,12 @@ Activez le "mode joueur" dans la configuration de la protection de l'ordinateur.
 * pertes mémoires potentielles sur les clients dans quelques cas de fermeture
 
 * pertes de trames d'images sur la librairie cliente de temps en temps, donc il doit y avoir un plantage dans la tâche d'envoi de l'image (forcer une réactivation de l'envoi si rien envoyé après X boucles/trames)
+
+* faire une version VCL de la librairie qui est actuellement prévue pour les projets FMX
+
+* faire des tests MacOS / Windows et autres hors VM pour s'assurer que tout roule
+
+* faire des tests MacOS / MacOS pour s'assurer que tout roule
 
 -----
 
