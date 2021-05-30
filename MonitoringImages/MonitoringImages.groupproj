@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E4AC06EA-102A-4934-A7CC-A9F6CD51731C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Monitoring\Monitoring.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="JeuVideoAMonitorer\JeuVideoAMonitorer.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Monitoring">
+        <MSBuild Projects="Monitoring\Monitoring.dproj"/>
+    </Target>
+    <Target Name="Monitoring:Clean">
+        <MSBuild Projects="Monitoring\Monitoring.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Monitoring:Make">
+        <MSBuild Projects="Monitoring\Monitoring.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="JeuVideoAMonitorer">
+        <MSBuild Projects="JeuVideoAMonitorer\JeuVideoAMonitorer.dproj"/>
+    </Target>
+    <Target Name="JeuVideoAMonitorer:Clean">
+        <MSBuild Projects="JeuVideoAMonitorer\JeuVideoAMonitorer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JeuVideoAMonitorer:Make">
+        <MSBuild Projects="JeuVideoAMonitorer\JeuVideoAMonitorer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Monitoring;JeuVideoAMonitorer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Monitoring:Clean;JeuVideoAMonitorer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Monitoring:Make;JeuVideoAMonitorer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
